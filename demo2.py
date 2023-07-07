@@ -55,13 +55,13 @@ def getKey(password):
 def main():
     choice = input("(E)encrypt or (D)decrypt ")
     
-    if choice == 'E':
+    if choice == 'E' or 'e':
         filename = input("File to encrypt: ")
         password = input("Password: ")
         encrypt(getKey(password), filename)
         print("Done.")
         
-    elif choice == 'D':
+    elif choice == 'D' or 'd':
         filename = input("File to decrypt: ")
         password = input("Password: ")
         decrypt(getKey(password), filename)
